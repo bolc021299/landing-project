@@ -93,6 +93,11 @@
   width: 42px;
   height: 24px;
 }
+@media (min-width: 768px) {
+  .navbar {
+    padding: 16px 32px;
+  }
+}
 
 @media (max-width: 1151px) {
   .navbar__menu,
