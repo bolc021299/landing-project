@@ -19,7 +19,10 @@
     <link rel="stylesheet" href="css/components/navbar.css" />
 
     <!-- Page -->
-    <link rel="stylesheet" href="css/pages/home.css" />
+    <link rel="stylesheet" href="css/pages/hero.css" />
+    <link rel="stylesheet" href="css/pages/ecosystem.css" />
+    <link rel="stylesheet" href="css/pages/extension.css" />
+    <link rel="stylesheet" href="css/pages/customise.css" />
   </head>
 
   <body>
@@ -92,11 +95,11 @@
 
       <main>
         <!-- HERO -->
-        <section class="home">
+        <section class="section hero">
           <img
             src="./assets/images/bg-waves.png"
-            class="home__bg"
-            alt=""
+            class="hero__bg"
+            alt="waves"
             aria-hidden="true"
           />
 
@@ -120,22 +123,19 @@
         <section class="ecosystem">
           <img
             src="./assets/images/fe-waves.png"
-            class="fe-waves"
+            class="ecosystem__fe--waves"
             alt=""
             aria-hidden="true"
           />
 
-          <article class="ecosystem__management management">
+          <section class="ecosystem__management">
             <div class="management__content">
               <header class="management__header">
-                <h2 class="management__title">
-                  Project<br />
-                  Management
-                </h2>
+                <h2 class="management__title">Project Management</h2>
                 <img
                   src="./assets/images/fe-base-title.png"
-                  class="fe-base-title fe-base-title--management"
-                  alt=""
+                  class="management__fe__base__title"
+                  alt="base title"
                   aria-hidden="true"
                 />
               </header>
@@ -151,21 +151,19 @@
               >
             </div>
 
-            <div class="management__media" aria-label="Rectangle">
-              <div
-                class="management__mock"
-                role="img"
-                aria-label="Mockup"
-              ></div>
-            </div>
-          </article>
+            <figure
+              class="management__mock"
+              role="img"
+              aria-label="Management mockup"
+            ></figure>
+          </section>
 
-          <article class="ecosystem__work work">
+          <section class="ecosystem__work">
             <div class="work__image" aria-label="Ilustration">
               <img
                 src="./assets/images/fe-ellipse.png"
-                class="fe-ellipse"
-                alt=""
+                class="work__fe__ellipse"
+                alt="ellipse"
                 aria-hidden="true"
               />
             </div>
@@ -175,8 +173,8 @@
                 <h2 class="work__title">Work together</h2>
                 <img
                   src="./assets/images/fe-base-title.png"
-                  class="fe-base-title fe-base-title--work"
-                  alt=""
+                  class="work__fe__base__title"
+                  alt="base title"
                   aria-hidden="true"
                 />
               </header>
@@ -189,79 +187,63 @@
 
               <a class="btn btn--primary work__cta" href="#">Try it now →</a>
             </div>
-          </article>
+          </section>
         </section>
 
         <!-- EXTENSION -->
         <section class="extension">
-          <div class="container">
-            <div class="extension__inner">
-              <article class="extension__content content">
-                <header class="content__header">
-                  <h2 class="content__title">Use as Extension</h2>
-                  <img
-                    src="./assets/images/fe-base-title.png"
-                    class="fe-base-title fe-base-title--extension"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </header>
+          <div class="extension__content">
+            <header class="content__header">
+              <h2 class="content__title">Use as Extension</h2>
+              <img
+                src="./assets/images/fe-base-title.png"
+                class="fe-base-title fe-base-title--extension"
+                alt=""
+                aria-hidden="true"
+              />
+            </header>
 
-                <p class="content__text">
-                  Use the web clipper extension, available on Chrome and
-                  Firefox, to save web pages or take screenshots directly into
-                  your workspace.
-                </p>
+            <p class="content__text">
+              Customise the app with plugins, custom themes and multiple text
+              editors (Rich Text or Markdown). Or create your own scripts and
+              plugins using the Extension API.
+            </p>
 
-                <a href="#" class="btn btn--primary extension__cta"
-                  >Let’s Go →</a
-                >
-              </article>
-
-              <article class="extension__media">
-                <div class="content__mock" role="img" aria-label="Mockup"></div>
-              </article>
-            </div>
+            <a href="#" class="extension__cta">Let’s Go →</a>
           </div>
+          <figure
+            class="extension__mock"
+            role="img"
+            aria-label="Mockup"
+          ></figure>
         </section>
 
         <!-- CUSTOMISE -->
         <section class="customise">
-          <div class="container">
-            <div class="customise__inner">
-              <article class="customise__media">
-                <div
-                  class="customise__mock"
-                  role="img"
-                  aria-label="Mockup"
-                ></div>
-              </article>
+          <figure
+            class="customise__mock"
+            role="img"
+            aria-label="Mockup"
+          ></figure>
 
-              <article class="customise__content">
-                <header class="customise__header">
-                  <h2 class="customise__title">
-                    Customise it to<br />
-                    your needs
-                  </h2>
-                  <img
-                    src="./assets/images/fe-base-title.png"
-                    class="fe-base-title fe-base-title--customise"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                </header>
+          <div class="customise__content">
+            <header class="customise__header">
+              <h2 class="customise__title">Customise it to your needs</h2>
+              <img
+                src="./assets/images/fe-base-title.png"
+                class="fe-base-title fe-base-title--customise"
+                alt=""
+                aria-hidden="true"
+              />
+            </header>
 
-                <p class="customise__text">
-                  Customise the app with plugins, custom themes and multiple
-                  editors (Rich Text or Markdown). Or create your own scripts
-                  and plugins using the Extension API.
-                </p>
+            <p class="customise__text">
+              Customise the app with plugins, custom themes and multiple editors
+              (Rich Text or Markdown). Or create your own scripts and plugins
+              using the Extension API.
+            </p>
 
-                <a href="#" class="btn btn--primary customise__cta"
-                  >Let's Go →</a
-                >
-              </article>
-            </div>
+            <a href="#" class="btn btn--primary customise__cta">Let's Go →</a>
           </div>
         </section>
       </main>
