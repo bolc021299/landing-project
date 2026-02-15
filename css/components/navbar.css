@@ -147,8 +147,6 @@
   letter-spacing: -0.02em;
 }
 
-/* Responsive styles */
-
 @media (min-width: 768px) {
   .navbar {
     padding: 16px 32px;
