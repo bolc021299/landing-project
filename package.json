@@ -1,0 +1,12 @@
+{
+  "name": "landing1",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier \"**/*.{js,css,html,json,md}\" --write",
+    "format:check": "prettier \"**/*.{js,css,html,json,md}\" --check"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
+}

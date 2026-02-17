@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Whitepace Landing</title>
+
+    <!--Font-family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Base -->
+    <link rel="stylesheet" href="css/base/reset.css" />
+    <link rel="stylesheet" href="css/base/variables.css" />
+    <link rel="stylesheet" href="css/base/typographys.css" />
+
+    <!-- Layout -->
+    <link rel="stylesheet" href="css/layout/container.css" />
+    <link rel="stylesheet" href="css/layout/grid.css" />
+
+    <!-- Components -->
+    <link rel="stylesheet" href="css/components/button.css" />
+    <link rel="stylesheet" href="css/components/navbar.css" />
+    <link rel="stylesheet" href="css/components/section.css" />
+
+    <!-- Page -->
+    <link rel="stylesheet" href="css/home/home.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="navbar">
+        <a class="navbar__brand brand" href="/" aria-label="Ir a inicio">
+          <svg
+            width="25.96"
+            height="20.35"
+            viewBox="0 0 37 29"
+            fill="none"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M0 2.36525V9.1182C0 11.1749 2.50611 12.2719 4.03763 10.8322L11.3471 4.0792C12.9483 2.6052 11.904 0 9.71119 0H2.40169C1.07902 0 0 1.06265 0 2.36525Z"
+              fill="white"
+            />
+            <path
+              d="M34.5983 0H27.2888C25.1308 0 24.0517 2.6052 25.6529 4.0792L32.9624 10.8322C34.4939 12.2376 37 11.1749 37 9.1182V2.36525C37 1.06265 35.921 0 34.5983 0Z"
+              fill="white"
+            />
+            <path
+              d="M20.1533 16.4884L32.9624 28.3489C34.4939 29.7543 37 28.6917 37 26.6349V19.8134C37 19.1621 36.7215 18.5451 36.2342 18.0995L20.1533 3.18814C19.2135 2.33117 17.7865 2.33117 16.8467 3.18814L0.765757 18.0995C0.278457 18.5451 0 19.1621 0 19.8134V26.6349C0 28.6917 2.50611 29.7886 4.03763 28.3489L16.8467 16.4884C17.7865 15.6314 19.2135 15.6314 20.1533 16.4884Z"
+              fill="white"
+            />
+          </svg>
+          <span class="brand__text">whitepace</span>
+        </a>
+
+        <nav class="navbar__menu" aria-label="Menú principal">
+          <a class="navbar__link" href="#">
+            Products
+            <svg class="nav-arrow" viewBox="0 0 12 8" aria-hidden="true">
+              <path d="M1 1l5 5 5-5" />
+            </svg>
+          </a>
+          <a class="navbar__link" href="#">
+            Solutions
+            <svg class="nav-arrow" viewBox="0 0 12 8" aria-hidden="true">
+              <path d="M1 1l5 5 5-5" />
+            </svg>
+          </a>
+          <a class="navbar__link" href="#">
+            Resources
+            <svg class="nav-arrow" viewBox="0 0 12 8" aria-hidden="true">
+              <path d="M1 1l5 5 5-5" />
+            </svg>
+          </a>
+          <a class="navbar__link" href="#">
+            Pricing
+            <svg class="nav-arrow" viewBox="0 0 12 8" aria-hidden="true">
+              <path d="M1 1l5 5 5-5" />
+            </svg>
+          </a>
+        </nav>
+
+        <div class="navbar__actions">
+          <a class="btn btn--secondary" href="#">Login</a>
+          <a class="btn btn--primary navbar__btn-cta" href="#"
+            >Try Whitepace free →</a
+          >
+        </div>
+
+        <button class="navbar__toggle" type="button" aria-label="Toggle menu">
+          <img src="./assets/images/menu.png" alt="" />
+        </button>
+      </header>
+
+      <main>
+        <!-- HERO -->
+        <section class="section hero">
+          <img
+            src="./assets/images/long-waves.png"
+            class="hero__long-waves"
+            role="img"
+            aria-label="long waves"
+          />
+
+          <article class="hero__detail">
+            <h1 class="hero__title">Get More Done with whitepace</h1>
+
+            <p class="hero__text">
+              Project management software that enables your teams to
+              collaborate, plan, analyze and manage everyday tasks.
+            </p>
+
+            <a class="btn btn--primary" href="#"> Try TasKey Free → </a>
+          </article>
+
+          <figure class="hero__rectangle" aria-hidden="true"></figure>
+        </section>
+
+        <!-- ECOSYSTEM -->
+        <section class="section--white ecosystem">
+          <img
+            src="./assets/images/circular-waves.png"
+            class="ecosystem__circular-waves"
+            alt="circular waves"
+            aria-hidden="true"
+          />
+
+          <section class="ecosystem__management">
+            <article class="management__detail">
+              <header class="management__header">
+                <h1 class="management__title">Project Management</h1>
+                <img
+                  src="./assets/images/base-title.png"
+                  class="management__base__title"
+                  alt="base title"
+                  aria-hidden="true"
+                />
+              </header>
+
+              <p class="management__text">
+                Images, videos, PDFs and audio files are supported. Create math
+                expressions and diagrams directly from the app. Take photos with
+                the mobile app and save them to a note.
+              </p>
+
+              <a class="btn btn--primary" href="#">Get Started →</a>
+            </article>
+
+            <figure
+              class="management__rectangle"
+              role="img"
+              aria-label="rectangle"
+            ></figure>
+          </section>
+
+          <section class="ecosystem__work">
+            <article class="work__detail">
+              <header class="work__header">
+                <h1 class="work__title">Work together</h1>
+                <img
+                  src="./assets/images/base-title.png"
+                  class="work__base__title"
+                  role="img"
+                  aria-label="base title"
+                />
+              </header>
+
+              <p class="work__text">
+                With whitepace, share your notes with your colleagues and
+                collaborate on them. You can also publish a note to the internet
+                and share the URL with others.
+              </p>
+
+              <a class="btn btn--primary" href="#">Try it now →</a>
+            </article>
+            <img
+              src="./assets/images/ellipse.png"
+              class="work__image"
+              alt="ellipse "
+              aria-hidden="true"
+            />
+          </section>
+        </section>
+
+        <!-- EXTENSION -->
+        <section class="section extension">
+          <article class="extension__detail">
+            <header class="extension__header">
+              <h1 class="extension__title">Use as Extension</h1>
+              <img
+                src="./assets/images/base-title.png"
+                class="extension__base__title"
+                aria-hidden="true"
+              />
+            </header>
+
+            <p class="extension__text">
+              Customise the app with plugins, custom themes and multiple text
+              editors (Rich Text or Markdown). Or create your own scripts and
+              plugins using the Extension API.
+            </p>
+
+            <a href="#" class="btn btn--primary">Let’s Go →</a>
+          </article>
+          <figure
+            class="extension__rectangle"
+            role="img"
+            aria-label="Rectangle"
+          ></figure>
+        </section>
+
+        <!-- CUSTOMISE -->
+        <section class="section--white customise">
+          <figure class="customise__rectangle" aria-hidden="true"></figure>
+
+          <article class="customise__detail">
+            <header class="customise__header">
+              <h1 class="customise__title">Customise it to your needs</h1>
+              <img
+                src="./assets/images/base-title.png"
+                class="customise__base__title"
+                alt=""
+                aria-hidden="true"
+              />
+            </header>
+
+            <p class="customise__text">
+              Customise the app with plugins, custom themes and multiple editors
+              (Rich Text or Markdown). Or create your own scripts and plugins
+              using the Extension API.
+            </p>
+
+            <a href="#" class="btn btn--primary">Let's Go →</a>
+          </article>
+        </section>
+
+        <!-- planeeeeeeeees-->
+
+        <section class="pricing section--white">
+          <header class="pricing__header">
+            <h1 class="pricing__title">Choose Your Plan</h1>
+            <p class="princing_description">
+              Whether you want to get organized, keep your personal life on
+              track, or boost workplace productivity, Evernote has the right
+              plan for you.
+            </p>
+          </header>
+
+          <div class="pricing__grid">
+            <!-- Free -->
+            <article class="plan plan--light">
+              <h3 class="plan__name">Free</h3>
+              <p class="plan__price">$0</p>
+              <p class="plan__desc">Capture ideas and find them quickly</p>
+
+              <ul class="plan__list">
+                <li class="plan__item">Sync unlimited devices</li>
+                <li class="plan__item">10 GB monthly uploads</li>
+                <li class="plan__item">200 MB max. note size</li>
+                <li class="plan__item">
+                  Customize Home dashboard and access extra widgets
+                </li>
+                <li class="plan__item">
+                  Connect primary Google Calendar account
+                </li>
+                <li class="plan__item">
+                  Add due dates, reminders, and notifications to your tasks
+                </li>
+              </ul>
+
+              <a class="btn btn--secondary plan__cta" href="#">Get Started</a>
+            </article>
+
+            <!-- Personal (destacada) -->
+            <article class="plan plan--featured">
+              <h3 class="plan__name">Personal</h3>
+              <p class="plan__price">
+                <span class="plan__currency">$</span>11.99
+              </p>
+              <p class="plan__desc">Keep home and family on track</p>
+
+              <ul class="plan__list">
+                <li class="plan__item">Sync unlimited devices</li>
+                <li class="plan__item">10 GB monthly uploads</li>
+                <li class="plan__item">200 MB max. note size</li>
+                <li class="plan__item">
+                  Customize Home dashboard and access extra widgets
+                </li>
+                <li class="plan__item">
+                  Connect primary Google Calendar account
+                </li>
+                <li class="plan__item">
+                  Add due dates, reminders, and notifications to your tasks
+                </li>
+              </ul>
+
+              <a class="btn btn--primary plan__cta" href="#">Get Started</a>
+            </article>
+
+            <!-- Organization -->
+            <article class="plan plan--light">
+              <h3 class="plan__name">Organization</h3>
+              <p class="plan__price">$49.99</p>
+              <p class="plan__desc">Capture ideas and find them quickly</p>
+
+              <ul class="plan__list">
+                <li class="plan__item">Sync unlimited devices</li>
+                <li class="plan__item">10 GB monthly uploads</li>
+                <li class="plan__item">200 MB max. note size</li>
+                <li class="plan__item">
+                  Customize Home dashboard and access extra widgets
+                </li>
+                <li class="plan__item">
+                  Connect primary Google Calendar account
+                </li>
+                <li class="plan__item">
+                  Add due dates, reminders, and notifications to your tasks
+                </li>
+              </ul>
+
+              <a class="btn btn--secondary plan__cta" href="#">Get Started</a>
+            </article>
+          </div>
+
+          <!-- dots para móvil (si haces “slider” con scroll) -->
+          <div class="pricing__dots" aria-hidden="true">
+            <span class="dot"></span>
+            <span class="dot dot--active"></span>
+            <span class="dot"></span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+>
