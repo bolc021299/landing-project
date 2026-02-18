@@ -265,154 +265,170 @@
 }
 
 /* ===== MOBILE PRICING ===== */
-@media (max-width: 768px) {
-  .pricing__grid {
-    display: flex;
-    overflow-x: auto;
-    gap: 16px;
-    padding: 0 16px;
-    scroll-snap-type: x mandatory;
-  }
+.pricing__header {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.pricing__title {
+  text-align: center;
+  max-width: 288px; /* prueba 180–260 */
+  margin: 0 auto;
+}
+.pricing__base__title {
+  position: relative;
+  left: 35%;
+  bottom: 41px;
+  width: 151px;
+  height: 49px;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+  margin-bottom: -53px;
+}
 
-  .plan {
-    flex: 0 0 85%;
-    max-width: 340px;
-    margin: 0 auto;
-    border-radius: 16px;
-    padding: 28px 22px;
-    display: flex;
-    flex-direction: column;
-    min-height: 640px;
-    scroll-snap-align: center;
-  }
+/* ===== plan ===== */
+.plan {
+  flex: 0 0 85%;
+  max-width: 340px;
+  margin: 0 auto;
+  border-radius: 16px;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  min-height: 640px;
+  scroll-snap-align: center;
+  border: 1px solid #ffe492;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
 
-  /* tarjeta azul */
-  .plan--featured {
-    background: #043873;
-    color: #fff;
-  }
+/* tarjeta azul */
+.plan--featured {
+  background: #043873;
+  color: #fff;
+}
 
-  /* nombre */
-  .plan__name {
-    font-size: 22px;
-    margin-bottom: 16px;
-  }
+/* nombre */
+.plan__name {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
 
-  /* precio */
-  .plan__price {
-    font-size: 44px;
-    font-weight: 700;
-    margin-bottom: 12px;
-  }
+/* precio */
+.plan__price {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
 
-  /* descripción */
-  .plan__desc {
-    margin-bottom: 24px;
-    opacity: 0.95;
-  }
+/* descripción */
+.plan__desc {
+  margin-bottom: 24px;
+  opacity: 0.95;
+}
 
-  /* lista */
-  .plan__list {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+/* lista */
+.plan__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  /* item con check */
-  .plan__item {
-    position: relative;
-    padding-left: 34px;
-    line-height: 1.4;
-  }
+/* item con check */
+.plan__item {
+  position: relative;
+  padding-left: 34px;
+  line-height: 1.4;
+}
 
-  .plan__item::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    top: 2px;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-weight: 700;
-    border: 2px solid rgba(246, 212, 90, 0.7);
-    color: #f6d45a;
-  }
+.plan__item::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  border: 2px solid rgba(246, 212, 90, 0.7);
+  color: #f6d45a;
+}
 
-  /* botón abajo sin tocar btn global */
-  .plan__cta {
-    margin-top: auto;
-    align-self: flex-start;
-  }
+/* botón abajo sin tocar btn global */
+.plan__cta {
+  margin-top: auto;
+  align-self: flex-start;
+}
 
-  /* dots */
-  .pricing__dots {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 18px;
-  }
+/* dots */
+.pricing__dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 85px;
+}
 
-  .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #5a8fd8;
-  }
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #5a8fd8;
+}
 
-  .dot--active {
-    background: #043873;
-  }
+.dot--active {
+  background: #043873;
 }
 
 .pricing__grid {
   display: flex;
   overflow-x: auto;
+  overflow: visible;
   gap: 16px;
   padding-inline: 16px;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  padding-block: 24px;
 }
 
 .pricing__grid::-webkit-scrollbar {
   display: none;
 }
 
-.plan {
-  flex: 0 0 85%;
-  max-width: 340px;
-  scroll-snap-align: center;
-}
-
 @media (max-width: 768px) {
   /* 1) el contenedor scrollea */
   .pricing__grid {
     display: flex;
-    gap: 16px;
+    gap: 32px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-
-    /* importante: no uses margin auto aquí */
-    padding: 0;
+    padding: 0 16px;
+    overflow-y: visible;
   }
-
-  /* 2) los “spacers” crean espacio al inicio y al final
-        para que el primer/último puedan centrarse */
-  .pricing__grid::before,
-  .pricing__grid::after {
-    content: '';
-    flex: 0 0 16px; /* espacio lateral visible */
-  }
-
-  /* 3) cada card ocupa casi toda la pantalla */
-  .plan {
-    flex: 0 0 calc(100% - 64px); /* 100% - (16 + 16 spacers) - gap aproximado */
+  .pricing__grid .plan {
+    max-width: none;
+    flex: 0 0 100%;
     scroll-snap-align: center;
+  }
+  .plan {
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+  }
+  .plan:hover {
+    transform: scale(1.06);
+    box-shadow: 0 20px 48px rgba(4, 56, 115, 0.22);
+    z-index: 10;
+    position: relative;
   }
 }
