@@ -637,7 +637,7 @@ extension {
   gap: 100px;
   padding: 100px 0 0 0;
 }
-.sponsors__logos img {
+.sponsors__logos{
   height: 50px;
   width: auto;
   object-fit: contain;
