@@ -12,23 +12,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/issue/settings/typographys.css" />
 
-    <!-- Base -->
-    <link rel="stylesheet" href="css/base/reset.css" />
-    <link rel="stylesheet" href="css/base/variables.css" />
-    <link rel="stylesheet" href="css/base/typographys.css" />
+    <link rel="stylesheet" href="./assets/issue/generics/reset.css" />
+    <link rel="stylesheet" href="./assets/issue/elements/body.css" />
+    <link rel="stylesheet" href="./assets/issue/objects/grid.css" />
 
-    <!-- Layout -->
-    <link rel="stylesheet" href="css/layout/container.css" />
-    <link rel="stylesheet" href="css/layout/grid.css" />
-
-    <!-- Components -->
-    <link rel="stylesheet" href="css/components/button.css" />
-    <link rel="stylesheet" href="css/components/navbar.css" />
-    <link rel="stylesheet" href="css/components/section.css" />
-
-    <!-- Page -->
-    <link rel="stylesheet" href="css/home/home.css" />
+    <link rel="stylesheet" href="./assets/issue/components/section.css" />
+    <link rel="stylesheet" href="./assets/issue/components/navbar.css" />
+    <link rel="stylesheet" href="./assets/issue/components/button.css" />
+    <link rel="stylesheet" href="./assets/issue/components/card.css" />
+    <link rel="stylesheet" href="./assets/issue/components/dots.css" />
+    <link rel="stylesheet" href="./assets/issue/components/home.css" />
   </head>
 
   <body>
@@ -98,8 +93,7 @@
         </button>
       </header>
 
-      <main>
-        <!-- HERO -->
+      <main class="hero">
         <section class="section hero">
           <img
             src="./assets/images/long-waves.png"
@@ -122,8 +116,7 @@
           <figure class="hero__rectangle" aria-hidden="true"></figure>
         </section>
 
-        <!-- ECOSYSTEM -->
-        <section class="section--white ecosystem">
+        <section class="section section--white ecosystem">
           <img
             src="./assets/images/circular-waves.png"
             class="ecosystem__circular-waves"
@@ -188,7 +181,6 @@
           </section>
         </section>
 
-        <!-- EXTENSION -->
         <section class="section extension">
           <article class="extension__detail">
             <header class="extension__header">
@@ -215,8 +207,7 @@
           ></figure>
         </section>
 
-        <!-- CUSTOMISE -->
-        <section class="section--white customise">
+        <section class="section section--white customise">
           <figure class="customise__rectangle" aria-hidden="true"></figure>
 
           <article class="customise__detail">
@@ -240,9 +231,7 @@
           </article>
         </section>
 
-        <!-- planeeeeeeeees-->
-
-        <section class="section--white pricing">
+        <section class="section section--white pricing">
           <header class="pricing__header">
             <h1 class="pricing__title">Choose Your Plan</h1>
             <img
@@ -258,94 +247,305 @@
             you.
           </p>
 
-          <div class="pricing__grid">
+          <div class="card-grid">
             <!-- Free -->
-            <article class="plan plan--light">
-              <h3 class="plan__name">Free</h3>
-              <p class="plan__price">$0</p>
-              <p class="plan__desc">Capture ideas and find them quickly</p>
+            <article class="card card--light">
+              <h3 class="card__name">Free</h3>
+              <p class="card__price">$0</p>
+              <p class="card__desc">Capture ideas and find them quickly</p>
 
-              <ul class="plan__list">
-                <li class="plan__item">Sync unlimited devices</li>
-                <li class="plan__item">10 GB monthly uploads</li>
-                <li class="plan__item">200 MB max. note size</li>
-                <li class="plan__item">
+              <ul class="card__list">
+                <li class="card__item">Sync unlimited devices</li>
+                <li class="card__item">10 GB monthly uploads</li>
+                <li class="card__item">200 MB max. note size</li>
+                <li class="card__item">
                   Customize Home dashboard and access extra widgets
                 </li>
-                <li class="plan__item">
+                <li class="card__item">
                   Connect primary Google Calendar account
                 </li>
-                <li class="plan__item">
+                <li class="card__item">
                   Add due dates, reminders, and notifications to your tasks
                 </li>
               </ul>
 
-              <a class="btn btn--secondary plan__cta" href="#">Get Started</a>
+              <a class="btn btn--third" href="#">Get Started</a>
             </article>
 
             <!-- Personal (destacada) -->
-            <article class="plan plan--featured">
-              <h3 class="plan__name">Personal</h3>
-              <p class="plan__price">
-                <span class="plan__currency">$</span>11.2
+            <article class="card card--featured">
+              <h3 class="card__name">Personal</h3>
+              <p class="card__price">
+                <span class="card__currency">$</span>11.2
               </p>
-              <p class="plan__desc">Keep home and family on track</p>
+              <p class="card__desc">Keep home and family on track</p>
 
-              <ul class="plan__list">
-                <li class="plan__item">Sync unlimited devices</li>
-                <li class="plan__item">10 GB monthly uploads</li>
-                <li class="plan__item">200 MB max. note size</li>
-                <li class="plan__item">
+              <ul class="card__list">
+                <li class="card__item">Sync unlimited devices</li>
+                <li class="card__item">10 GB monthly uploads</li>
+                <li class="card__item">200 MB max. note size</li>
+                <li class="card__item">
                   Customize Home dashboard and access extra widgets
                 </li>
-                <li class="plan__item">
+                <li class="card__item">
                   Connect primary Google Calendar account
                 </li>
-                <li class="plan__item">
+                <li class="card__item">
                   Add due dates, reminders, and notifications to your tasks
                 </li>
               </ul>
 
-              <a class="btn btn--primary plan__cta" href="#">Get Started</a>
+              <a class="btn btn--third select" href="#">Get Started</a>
             </article>
 
             <!-- Organization -->
-            <article class="plan plan--light">
-              <h3 class="plan__name">Organization</h3>
-              <p class="plan__price">$49.99</p>
-              <p class="plan__desc">Capture ideas and find them quickly</p>
+            <article class="card card--light">
+              <h3 class="card__name">Organization</h3>
+              <p class="card__price">$49.99</p>
+              <p class="card__desc">Capture ideas and find them quickly</p>
 
-              <ul class="plan__list">
-                <li class="plan__item">Sync unlimited devices</li>
-                <li class="plan__item">10 GB monthly uploads</li>
-                <li class="plan__item">200 MB max. note size</li>
-                <li class="plan__item">
+              <ul class="card__list">
+                <li class="card__item">Sync unlimited devices</li>
+                <li class="card__item">10 GB monthly uploads</li>
+                <li class="card__item">200 MB max. note size</li>
+                <li class="card__item">
                   Customize Home dashboard and access extra widgets
                 </li>
-                <li class="plan__item">
+                <li class="card__item">
                   Connect primary Google Calendar account
                 </li>
-                <li class="plan__item">
+                <li class="card__item">
                   Add due dates, reminders, and notifications to your tasks
                 </li>
               </ul>
 
-              <a class="btn btn--secondary plan__cta" href="#">Get Started</a>
+              <a class="btn btn--third" href="#">Get Started</a>
             </article>
           </div>
 
-          <!-- dots para móvil (si haces “slider” con scroll) -->
-          <div class="pricing__dots">
+          <div class="dots">
             <span class="dot"></span>
             <span class="dot dot--active"></span>
             <span class="dot"></span>
           </div>
         </section>
 
-        <
+        <section class="section sync">
+          <header class="sync__header">
+            <h1>Your work, everywhere you are</h1>
+            <img
+              src="./assets/images/base-title-azul.png"
+              class="sync_base_title-azul"
+              aria-hidden="true"
+            />
+          </header>
+          <p>
+            Access your notes from your computer, phone or tablet by
+            synchronising with various services, including whitepace, Dropbox
+            and OneDrive. The app is available on Windows, macOS, Linux, Android
+            and iOS. A terminal app is also available!
+          </p>
+          <a href="#" class="btn btn--primary">Try Taskey →</a>
+        </section>
+
+        <section class="section section--white data">
+          <img
+            src="./assets/images/security-red.png"
+            class="security-image"
+            alt="Security network illustration"
+          />
+          <header class="data__header">
+            <h1 class="data__title">100% your data</h1>
+            <img
+              src="./assets/images/base-title.png"
+              class="data__base-title"
+              aria-hidden="true"
+            />
+          </header>
+          <p class="data__text">
+            The app is open source and your notes are saved to an open format,
+            so you'll always have access to them. Uses End-to-End Encryption
+            (E2EE) to secure your notes and ensure no-one but yourself can
+            access them.
+          </p>
+
+          <a href="#" class="btn btn--primary">Read More →</a>
+        </section>
+
+        <section class="section section--white sponsors">
+          <header class="sponsors__header">
+            <h1 class="sponsors__title">Our sponsors</h1>
+            <img
+              src="./assets/images/base-title.png"
+              class="sponsors__base-title"
+              aria-hidden="true"
+            />
+          </header>
+          <div class="sponsors__logos">
+            <img src="./assets/images/apple-logo.png" alt="Apple logo" />
+            <img
+              src="./assets/images/microsoft-logo.png"
+              alt="Microsoft logo"
+            />
+            <img src="./assets/images/slack-logo.png" alt="Slack logo" />
+            <img src="./assets/images/google-logo.png" alt="Google logo" />
+          </div>
+        </section>
+
+        <section class="section integrations">
+          <img
+            src="./assets/images/apps-logo.png"
+            class="integrations__apps"
+            alt="apps logos"
+          />
+          <article class="integrations__detail">
+            <h1 class="integrations__title">
+              Work with Your Favorite Apps Using whitepace
+            </h1>
+            <p class="integrations__text">
+              Whitepace teams up with your favorite software. Integrate with
+              over 1000+ apps with Zapier to have all the tools you need for
+              your project success.
+            </p>
+            <a href="#" class="btn btn--primary">Read more →</a>
+          </article>
+        </section>
+
+        <section class="section section--white testimonial">
+          <header class="testimonial__header">
+            <h1 class="testimonial__title">What Our Clients Say</h1>
+            <img
+              src="./assets/images/base-title.png"
+              class="testimonial__base-title"
+              alt=""
+              aria-hidden="true"
+            />
+          </header>
+          <div class="card-grid card__testimonial">
+            <article class="card testimonial">
+              <img
+                src="./assets/icons/quotes.png"
+                alt=""
+                class="testimonial__quotes"
+                aria-hidden="true"
+              />
+
+              <p class="testimonial__text">
+                Taskkey is designed as a collaboration tool for businesses that
+                is a full project management solution.
+              </p>
+
+              <hr class="testimonial__divider" />
+
+              <div class="testimonial__author">
+                <img
+                  src="./assets/images/testimonial-1.png"
+                  class="testimonial_photo"
+                  alt="Oberon Shaw"
+                />
+
+                <div>
+                  <p class="testimonial__name">Oberon Shaw, MCH</p>
+                  <p class="testimonial__role">
+                    Head of Talent Acquisition, North America
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card testimonial card--featured">
+              <img
+                src="./assets/icons/quotes.png"
+                alt=""
+                class="testimonial__quotes"
+                aria-hidden="true"
+              />
+
+              <p class="testimonial__text">
+                Taskkey is designed as a collaboration tool for businesses that
+                is a full project management solution.
+              </p>
+
+              <hr class="testimonial__divider" />
+
+              <div class="testimonial__author">
+                <img
+                  src="./assets/images/testimonial-2.png"
+                  class="testimonial_photo"
+                  alt="Oberon Shaw"
+                />
+
+                <div>
+                  <p class="testimonial__name">Oberon Shaw, MCH</p>
+                  <p class="testimonial__role">
+                    Head of Talent Acquisition, North America
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card testimonial">
+              <img
+                src="./assets/icons/quotes.png"
+                alt=""
+                class="testimonial__quotes"
+                aria-hidden="true"
+              />
+
+              <p class="testimonial__text">
+                Taskkey is designed as a collaboration tool for businesses that
+                is a full project management solution.
+              </p>
+
+              <hr class="testimonial__divider" />
+
+              <div class="testimonial__author">
+                <img
+                  src="./assets/images/testimonial-3.png"
+                  class="testimonial_photo"
+                  alt="Oberon Shaw"
+                />
+
+                <div>
+                  <p class="testimonial__name">Oberon Shaw, MCH</p>
+                  <p class="testimonial__role">
+                    Head of Talent Acquisition, North America
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot dot--active"></span>
+            <span class="dot"></span>
+          </div>
+        </section>
+
+        <section class="section signup">
+          <div class="signup__content">
+            <h2 class="signup__title">Try Whitepace today</h2>
+
+            <p class="signup__text">
+              Get started for free.<br />
+              Add your whole team as your needs grow.
+            </p>
+
+            <a href="#" class="btn btn--primary"> Try Taskey free → </a>
+
+            <p class="signup__sales">
+              On a big team? <a href="#">Contact sales</a>
+            </p>
+
+            <div class="signup__apps">
+              <img src="./assets/images/apple-logo-white.png" alt="Apple" />
+              <img src="./assets/images/windows-logo-white.png" alt="Windows" />
+              <img src="./assets/images/android-logo-white.png" alt="Android" />
+            </div>
+          </div>
+        </section>
       </main>
     </div>
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
->

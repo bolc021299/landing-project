@@ -1,3 +1,9 @@
+.hero__detail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
 .hero__long-waves {
   position: absolute;
   width: 100%;
@@ -122,12 +128,16 @@
 
 /* SECTION MANAGEMENT  */
 /*  SECTION MANAGEMENT   */
+.ecosystem {
+  position: relative;
+  overflow: hidden;
+}
 
 .ecosystem__circular-waves {
   position: absolute;
   width: 29%;
   height: 10%;
-  z-index: -2;
+  z-index: 1;
   opacity: 0.3;
   pointer-events: none;
   top: 74px;
@@ -271,9 +281,11 @@
   justify-content: center;
 }
 .pricing__title {
+  position: relative;
   text-align: center;
-  max-width: 288px; /* prueba 180–260 */
+  max-width: 288px;
   margin: 0 auto;
+  z-index: 1;
 }
 .pricing__base__title {
   position: relative;
@@ -283,54 +295,39 @@
   height: 49px;
   pointer-events: none;
   user-select: none;
-  z-index: -1;
+  z-index: 0;
   margin-bottom: -53px;
 }
 
 /* ===== plan ===== */
-.plan {
-  flex: 0 0 85%;
-  max-width: 340px;
-  margin: 0 auto;
-  border-radius: 16px;
-  padding: 28px 22px;
-  display: flex;
-  flex-direction: column;
-  min-height: 640px;
-  scroll-snap-align: center;
-  border: 1px solid #ffe492;
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
-}
 
-/* tarjeta azul */
-.plan--featured {
-  background: #043873;
-  color: #fff;
+.card {
+  border: 2px solid #ffe492;
 }
-
+.card__list {
+  margin-bottom: 25px;
+}
 /* nombre */
-.plan__name {
+.card__name {
   font-size: 22px;
   margin-bottom: 16px;
 }
 
 /* precio */
-.plan__price {
+.card__price {
   font-size: 44px;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
 /* descripción */
-.plan__desc {
+.card__desc {
   margin-bottom: 24px;
   opacity: 0.95;
 }
 
 /* lista */
-.plan__list {
+.card__list {
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -340,13 +337,13 @@
 }
 
 /* item con check */
-.plan__item {
+.card__item {
   position: relative;
   padding-left: 34px;
   line-height: 1.4;
 }
 
-.plan__item::before {
+.card__item::before {
   content: '✓';
   position: absolute;
   left: 0;
@@ -357,78 +354,188 @@
   display: grid;
   place-items: center;
   font-weight: 700;
-  border: 2px solid rgba(246, 212, 90, 0.7);
+  border: 2px solid #f6d45a;
   color: #f6d45a;
 }
 
-/* botón abajo sin tocar btn global */
-.plan__cta {
+.card--position {
   margin-top: auto;
   align-self: flex-start;
 }
 
 /* dots */
-.pricing__dots {
-  display: flex;
+.pricing .dots {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.select {
+  background: #4f9cf9;
+  color: #fff;
+  border: none;
+}
+.btn--third {
+  margin-top: 25px;
+}
+/*----------------SYNC--------------*/
+
+.sync {
+  margin-left: 0;
+  margin-right: auto;
+  align-items: flex-start;
+  text-align: left;
+  padding-bottom: 140px;
+}
+.sync__header {
+  text-align: left;
+}
+.section.sync h1 {
+  text-align: left;
+}
+.sync_base_title-azul {
+  width: 85%;
+  position: relative;
+  z-index: -1;
+  top: -20px;
+  pointer-events: none;
+}
+.sync__header {
+  max-width: 288px;
+}
+/*-------------DATA-------*/
+
+.security-image {
+  width: 100%;
+  height: auto;
   justify-content: center;
-  gap: 10px;
-  margin-top: 85px;
+  margin-bottom: 60px;
+  display: block;
+  padding: 0px;
+  line-height: 0;
 }
-
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #5a8fd8;
+.data__header {
+  display: block;
 }
-
-.dot--active {
-  background: #043873;
+.data__title {
+  z-index: 0;
 }
-
-.pricing__grid {
+.data__base-title {
+  position: relative;
+  z-index: -1;
+  width: 86%;
+  height: 50px;
+  right: -129px;
+  top: -42px;
+  margin-bottom: -50px;
+}
+/*---------sponsors--------*/
+.sponsors__header {
+  display: block;
+}
+.sponsors__title {
+  z-index: 1;
+  text-align: center;
+  max-width: 288px;
+  margin: auto;
+}
+.sponsors__base-title {
+  position: relative;
+  z-index: -1;
+  width: 90%;
+  height: 50px;
+  right: -117px;
+  top: -35px;
+  margin-bottom: -50px;
+}
+.sponsors__logos {
   display: flex;
-  overflow-x: auto;
-  overflow: visible;
-  gap: 16px;
-  padding-inline: 16px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  padding-block: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  padding: 100px 0 0 0;
+}
+.sponsors__logos img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
-.pricing__grid::-webkit-scrollbar {
-  display: none;
+/*-----------integrations----------*/
+.integrations {
+  padding: 100px 16px;
+}
+.integrations__apps {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+.integrations__detail {
+  justify-content: center;
 }
 
-@media (max-width: 768px) {
-  /* 1) el contenedor scrollea */
-  .pricing__grid {
-    display: flex;
-    gap: 32px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding: 0 16px;
-    overflow-y: visible;
-  }
-  .pricing__grid .plan {
-    max-width: none;
-    flex: 0 0 100%;
-    scroll-snap-align: center;
-  }
-  .plan {
-    transition:
-      transform 0.25s ease,
-      box-shadow 0.25s ease;
-    cursor: pointer;
-    z-index: 10;
-    position: relative;
-  }
-  .plan:hover {
-    transform: scale(1.06);
-    box-shadow: 0 20px 48px rgba(4, 56, 115, 0.22);
-    z-index: 10;
-    position: relative;
-  }
+/*--------testimonial ---------*/
+
+.testimonial__quotes {
+  width: 56px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.testimonial .card {
+  border: none;
+  margin: 60px auto;
+  align-items: flex-start;
+  text-align: left;
+  background-color: #4f9cf9;
+}
+
+.testimonial__header {
+  display: block;
+  max-width: 288px;
+}
+
+.testimonial__title {
+  z-index: 1;
+  font-size: 40px;
+}
+
+.testimonial__base-title {
+  position: relative;
+  bottom: 52px;
+  width: 151px;
+  height: 49px;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+  margin-bottom: -72px;
+  left: 86px;
+}
+
+.testimonial__text {
+  font-size: 16px;
+  margin: 32px 0 40px 0;
+}
+.testimonial_photo {
+  margin-top: 40px;
+  width: 65px;
+  height: 65px;
+}
+
+.testimonial__divider {
+  border: 2px;
+  height: 1px;
+  width: 100%;
+  align-self: stretch;
+  background: rgba(0, 0, 0, 0.35);
+  margin: 0;
+}
+
+.testimonial__name {
+  margin-bottom: 15px;
+}
+.testimonial__role {
+  margin: 0px;
+}
+/*-----------------signup----------------*/
+.signup {
 }
