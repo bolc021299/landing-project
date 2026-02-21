@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "format": "prettier \"**/*.{js,css,html,json,md}\" --write",
-    "format:check": "prettier \"**/*.{js,css,html,json,md}\" --check"
+    "start": "http-server ./ --port 4200",
+    "compile-css": "sass --watch ./theme/index.scss ./output/index.css"
   },
   "devDependencies": {
     "prettier": "^3.8.1"

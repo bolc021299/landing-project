@@ -1,0 +1,37 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.btn--primary {
+  background: #4f9cf9;
+  color: #fff;
+  max-width: 232px;
+  height: 70px;
+  padding: 20px 40px;
+  font-size: 18px;
+}
+
+.btn--secondary {
+  background: #ffe492;
+  color: #043873;
+}
+
+.btn--third {
+  background-color: #fff;
+  color: #111;
+  height: 50px;
+  padding: 16px 24px;
+  border: 2px solid #f6d45a;
+}
