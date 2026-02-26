@@ -20,7 +20,7 @@
 }
 
 p {
-  margin: 24px 0 60px 0;
+  margin: 24px auto 60px auto;
 }
 
 @media (max-width: 768px) {
@@ -31,17 +31,11 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 .section--white.pricing {
   overflow: visible;
-}
-
-@media (max-width: 768px) {
-  .pricing__grid {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-  }
 }

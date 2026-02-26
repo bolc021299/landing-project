@@ -1,9 +1,3 @@
-.hero__detail {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  z-index: 2;
-}
 .hero__long-waves {
   position: absolute;
   width: 100%;
@@ -15,115 +9,36 @@
   top: 21%;
   left: 19%;
 }
+
 .hero__detail {
-  max-height: 364px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
   align-items: center;
 }
-
 .hero__title {
-  width: 288px;
-  height: 88px;
+  width: 100%;
+  height: auto;
   z-index: 1;
+  max-width: 500px;
 }
 
 .hero__text {
-  width: 288px;
-  height: 120px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
   z-index: 1;
+  text-align: center;
 }
-
 .hero__rectangle {
-  width: 286px;
-  height: 191px;
+  width: 89.375vw;
+  height: 59.688vw;
   margin: 100px auto 0 auto;
   align-self: start;
   position: relative;
   z-index: 1;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    padding: 140px 20px 100px 20px;
-  }
-
-  .hero__long-waves {
-    position: absolute;
-    max-width: 100%;
-    height: 37%;
-    filter: brightness(1);
-    pointer-events: none;
-    transform: scale(1.65) scaleX(0.8) scaleY(1.1) rotate(1deg);
-    top: 23%;
-    left: -4%;
-    z-index: 0;
-  }
-  .hero__title,
-  .hero__text {
-    max-width: 728px;
-  }
-
-  .hero__rectangle {
-    width: 551px;
-    height: 367px;
-  }
-}
-
-@media (min-width: 1152px) {
-  .hero {
-    padding: 140px 32px;
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-  }
-  .hero__long-waves {
-    max-width: 100%;
-    height: 37%;
-    filter: brightness(1);
-    transform: scale(1.6) scaleX(0.65) scaleY(1.2) rotate(1deg);
-    top: 38%;
-    z-index: 0;
-  }
-  .hero__detail {
-    width: 562px;
-  }
-
-  .hero__rectangle {
-    width: 526px;
-    height: 350px;
-    margin: 0;
-    justify-self: end;
-  }
-}
-
-@media (min-width: 1440px) {
-  .hero {
-    padding: 100px 32px;
-  }
-
-  .hero__detail {
-    margin: 47px 0px auto 0px;
-    width: 100%;
-    text-align: left;
-    height: 456px;
-  }
-
-  .hero__rectangle {
-    width: 685px;
-    height: 456.39px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .hero {
-    padding: 100px 220px;
-    max-width: 1920px;
-    margin: 0 auto;
-  }
-
-  .hero__rectangle {
-    width: 824px;
-    height: 559px;
-    justify-self: end;
-  }
 }
 
 /* SECTION MANAGEMENT  */
@@ -155,22 +70,25 @@
 }
 .management__header {
   max-width: 100%;
+  position: relative;
 }
 
 .management__base__title {
-  position: relative;
-  margin: -35px auto 0 auto;
-  left: 40%;
+  position: absolute;
+  left: 202px;
   z-index: -1;
   pointer-events: none;
-  width: 220.846px;
-  height: 33.011px;
+  width: 247px;
+  height: 30px;
   transform: translateX(-38%) scale(1.5);
+  top: 56px;
 }
+
 .management__rectangle {
-  width: 286px;
-  height: 177px;
-  margin: 60px auto 100px auto;
+  width: 89.375vw;
+  height: 55.313vw;
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 
 .ecosystem__image {
@@ -212,8 +130,6 @@
 /*SECTION  EXTENSION */
 
 .extension__detail {
-  height: 392px;
-  width: 100%;
   justify-content: space-between;
 }
 
@@ -224,7 +140,7 @@
 }
 .extension__title {
   z-index: 2;
-  width: 95%;
+  max-width: 95%;
 }
 .extension__base__title {
   position: relative;
@@ -241,8 +157,8 @@
 }
 
 .extension__rectangle {
-  width: 284.5px;
-  height: 198.65px;
+  width: 89.375vw;
+  height: 62.078vw;
   margin-top: 60px;
 }
 
@@ -256,13 +172,19 @@
 }
 
 .customise__rectangle {
-  width: 100%;
-  height: 214.62px;
+  width: 89.375vw;
+  height: 67.069vw;
   margin-bottom: 60px;
 }
 .customise__detail {
-  width: 288px;
   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.customise__title {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .customise__base__title {
@@ -287,7 +209,6 @@
 .pricing__title {
   position: relative;
   text-align: center;
-  max-width: 288px;
   margin: 0 auto;
   z-index: 1;
 }
@@ -312,24 +233,29 @@
 }
 .card__list {
   margin-bottom: 25px;
+  font-size: 18px;
 }
 /* nombre */
 .card__name {
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 16px;
+  text-align: left;
 }
-
 /* precio */
 .card__price {
+  margin: 28px 0 28px 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
   font-size: 44px;
-  font-weight: 700;
-  margin-bottom: 12px;
 }
 
 /* descripción */
 .card__desc {
   margin-bottom: 24px;
   opacity: 0.95;
+  margin-left: 0;
+  font-size: 16px;
 }
 
 /* lista */
@@ -340,6 +266,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 16px;
 }
 
 /* item con check */
@@ -381,6 +308,7 @@
 .btn--third {
   margin-top: 25px;
 }
+
 /*----------------SYNC--------------*/
 
 .sync {
@@ -393,6 +321,11 @@
 .sync__header {
   text-align: left;
 }
+
+.sync__media-waves {
+  display: none;
+}
+
 .section.sync h1 {
   text-align: left;
 }
@@ -404,7 +337,7 @@
   pointer-events: none;
 }
 .sync__header {
-  max-width: 288px;
+  display: block;
 }
 /*-------------DATA-------*/
 
@@ -473,6 +406,7 @@
   height: auto;
   margin-bottom: 100px;
   justify-content: center;
+  z-index: 1;
 }
 .integrations__detail {
   justify-content: center;
@@ -487,13 +421,20 @@
   transform: scale(2.2) rotate(20deg);
   top: 31%;
   left: 19%;
+  z-index: -1;
 }
 
 /*--------testimonial ---------*/
 .testimonial {
-  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+.tablet__title {
+  display: none;
 }
 .testimonial__quotes {
+  margin-top: -10px;
+  margin-bottom: 30px;
   width: 56px;
   height: 40px;
   object-fit: contain;
@@ -508,12 +449,14 @@
 
 .testimonial__header {
   display: block;
-  max-width: 288px;
 }
 
 .testimonial__title {
   z-index: 1;
   font-size: 40px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .testimonial__base-title {
@@ -537,22 +480,22 @@
   width: 65px;
   height: 65px;
 }
-
+.card__testimonial p {
+  margin: 0;
+}
 .testimonial__divider {
   border: 2px;
   height: 1px;
   width: 100%;
   align-self: stretch;
   background: rgba(0, 0, 0, 0.35);
-  margin: 0;
+  margin-top: 40px;
 }
 
 .testimonial__name {
   margin-bottom: 15px;
 }
-.testimonial__role {
-  margin: 0px;
-}
+
 .testimonial__card p,
 .testimonial__card span,
 .testimonial__card strong {
@@ -565,6 +508,7 @@
   background: white;
   border-color: white;
 }
+
 /*-----------------signup----------------*/
 .signup {
   display: flex;
@@ -578,7 +522,16 @@
   text-align: left;
 }
 .signup__apps {
+  max-width: 30px;
+  max-height: 30px;
   display: flex;
-  justify-content: flex-end;
   gap: 40px;
+}
+.signup__sales {
+  margin-left: 0;
+}
+/*--------------------final-------------*/
+.final {
+  margin: 0%;
+  padding: 0%;
 }

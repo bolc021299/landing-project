@@ -218,11 +218,8 @@
           </article>
         </section>
 
-<<<<<<< HEAD
-        <section class="section--white pricing">
-=======
+
         <section class="section section--white pricing">
->>>>>>> 77184208a2816a688ab6309cd37b9d007e4dd124
           <header class="pricing__header">
             <h1 class="pricing__title">Choose Your Plan</h1>
             <img
@@ -265,7 +262,7 @@
             <article class="card card--featured">
               <h3 class="card__name">Personal</h3>
               <p class="card__price">
-                <span class="card__currency">$</span>11.2
+                <span class="card__currency">$</span><b>11.2</b>
               </p>
               <p class="card__desc">Keep home and family on track</p>
 
@@ -310,12 +307,8 @@
               <a class="btn btn--third" href="#">Get Started</a>
             </article>
           </div>
-
-<<<<<<< HEAD
           <div class="pricing__dots">
-=======
-          <div class="dots">
->>>>>>> 77184208a2816a688ab6309cd37b9d007e4dd124
+             <div class="dots">
             <span class="dot"></span>
             <span class="dot dot--active"></span>
             <span class="dot"></span>
@@ -323,8 +316,10 @@
         </section>
 
         <section class="section sync">
-          <header class="sync__header">
-            <h1>Your work, everywhere you are</h1>
+          <img src="./assets/images/media-waves.png"
+          class="sync__media-waves" alt="image waves">
+          <header class="sync__head">
+            <h1 >Your work, everywhere you are</h1>
             <img
               src="./assets/images/base-title-azul.png"
               class="sync_base_title-azul"
@@ -410,38 +405,9 @@
         </section>
 
         <section class="section section--white testimonial">
-<<<<<<< HEAD
-          <h1 class="testimonial__title">What Our Clients Says</h1>
-          <article class="testimonial-1">
-            <img
-              src="./assets/icons/quotes.png"
-              alt="quotes"
-              class="testimonial-1__quotes"
-              aria-hidden="true"
-            />
-            <p class="testimonial-1__text">
-              Taskkey is designed as a collaboration tool for businesses that is
-              a full project management solution.
-            </p>
-            <hr class="testimonial-1__divider" />
-            <div class="testimonial-1__author">
-              <img
-                src="./assets/images/testimonial-1.png"
-                alt="Oberon Shaw"
-                class=""
-              />
-              <div>
-                <p class="testimonial-1__name">Oberon Shaw, MCH</p>
-                <p class="testimonial-1__role">
-                  Head of Talent Acquisition, North America
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="testimonial-2"></article>
-=======
           <header class="testimonial__header">
             <h1 class="testimonial__title">What Our Clients Say</h1>
+            <h1 class="tablet__title">See what our trusted users Say</h1>
             <img
               src="./assets/images/base-title.png"
               class="testimonial__base-title"
@@ -549,11 +515,12 @@
             <span class="dot"></span>
           </div>
         </section>
-
+ 
+ <div class="section final">
         <section class="section signup">
-          <header class="signup__header">
+        
             <h1 class="signup__title">Try Whitepace today</h1>
-          </header>
+       
 
           <p class="signup__text">
             Get started for free.<br />
@@ -563,17 +530,16 @@
           <a href="#" class="btn btn--primary"> Try Taskey free → </a>
 
           <p class="signup__sales">
-            On a big team? <a href="#">Contact sales</a>
+            On a big team? Contact sales
           </p>
 
           <div class="signup__apps">
-            <img src="./assets/images/apple-logo-white.png" alt="Apple" />
-            <img src="./assets/images/windows-logo-white.png" alt="Windows" />
-            <img src="./assets/images/android-logo-white.png" alt="Android" />
+            <img class="signup__apple" src="./assets/images/apple-logo-white.png" alt="Apple" />
+            <img class="signup__windows" src="./assets/images/windows-logo-white.png" alt="Windows" />
+            <img class="signup__android" src="./assets/images/android-logo-white.png" alt="Android" />
           </div>
->>>>>>> 77184208a2816a688ab6309cd37b9d007e4dd124
         </section>
-      </main>
+     
       <footer class="footer">
         <div class="footer__brand">
           <svg
@@ -581,6 +547,7 @@
             height="29"
             viewBox="0 0 37 29"
             fill="none"
+            class="footer__icon"
             aria-hidden="true"
             focusable="false"
           >
@@ -600,7 +567,7 @@
           <h2 class="footer__logo">whitepace</h2>
         </div>
         <p>
-          whitepace was created for the new ways we live and work. We make
+          whitepace was created for the new ways we live and work. <br>We make
           beautifully designed around the world
         </p>
 
@@ -692,6 +659,8 @@
         </article>
       </footer>
     </div>
+    </div>
+    </main>
     <script src="./js/main.js"></script>
   </body>
 </html>

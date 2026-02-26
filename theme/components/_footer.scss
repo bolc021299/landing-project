@@ -1,7 +1,7 @@
 .footer {
-  padding: 140px 16px 16px 32px;
+  padding: 140px 16px 30px 16px;
   text-align: center;
-  background: #0f3b73;
+  background: #043873;
   color: white;
 }
 .footer__brand {
@@ -10,7 +10,6 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  height: 34px;
 }
 
 .footer__logo {
@@ -30,8 +29,8 @@
 }
 
 .footer__content {
-  width: 201px;
-  margin: 0 auto 80px auto;
+  max-width: 53.6vw;
+  margin: 0 auto 0 auto;
   text-align: center;
 }
 .footer__info {
@@ -41,9 +40,7 @@
   margin: 23px 0;
 }
 .footer__bottom {
-  margin:
-    0,
-    auto 20px auto;
+  margin: 0 auto 20px auto;
 }
 
 .lang {
@@ -66,7 +63,6 @@
   filter: brightness(0) invert(1);
 }
 
-/* flecha dibujada */
 .lang__arrow {
   width: 10px;
   height: 10px;
@@ -76,7 +72,6 @@
   margin-left: 6px;
 }
 
-/* menú */
 .lang__menu {
   position: absolute;
   left: 0;
@@ -88,7 +83,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   min-width: 180px;
-  display: none; /* oculto por defecto */
+  display: none;
 }
 
 .lang.is-open .lang__menu {
@@ -110,8 +105,9 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
-  margin-bottom: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 20px;
   padding-top: 20px;
+}
+.footer__legal {
+  margin-top: 80px;
 }

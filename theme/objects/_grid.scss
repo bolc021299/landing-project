@@ -1,5 +1,5 @@
 /* Mobile: scroll horizontal */
-@media (max-width: 768px) {
+@media (max-width: 1151px) {
   .card-grid {
     display: flex;
     overflow-x: auto;
@@ -40,7 +40,7 @@
   }
 }
 /* Desktop: 3 columnas */
-@media (min-width: 769px) {
+@media (min-width: 1152px) {
   .card-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
