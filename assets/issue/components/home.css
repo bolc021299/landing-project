@@ -378,10 +378,7 @@ extension {
   color: #f6d45a;
 }
 
-.card--position {
-  margin-top: auto;
-  align-self: flex-start;
-}
+
 
 /* dots */
 .pricing .dots {

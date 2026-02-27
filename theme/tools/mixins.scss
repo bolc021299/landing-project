@@ -1,31 +1,37 @@
 @use '../settings/breakpoints';
 
 @mixin mobile() {
-  @media (min-width: 0) and (max-width: breakpoints.$breakpoint-md) {
+  @media (max-width: (breakpoints.$breakpoint-md - 1px)) {
     @content;
   }
 }
 
 @mixin tablet() {
-  @media (min-width: breakpoints.$breakpoint-md) {
+  @media (min-width: breakpoints.$breakpoint-md) and (max-width: (breakpoints.$breakpoint-lg - 1px)) {
     @content;
   }
 }
 
 @mixin laptop() {
-  @media (min-width: breakpoints.$breakpoint-lg) {
+  @media (min-width: breakpoints.$breakpoint-lg) and (max-width: (breakpoints.$breakpoint-xl - 1px)) {
     @content;
   }
 }
 
 @mixin desktop() {
-  @media (min-width: breakpoints.$breakpoint-xl) {
+  @media (min-width: breakpoints.$breakpoint-xl) and (max-width: (breakpoints.$breakpoint-xxl - 1px)) {
     @content;
   }
 }
 
 @mixin wide() {
   @media (min-width: breakpoints.$breakpoint-xxl) {
+    @content;
+  }
+}
+
+@mixin mobile-tablet() {
+  @media (max-width: (breakpoints.$breakpoint-lg - 1px)) {
     @content;
   }
 }
