@@ -1,0 +1,140 @@
+@use '../tools/mixins' as media;
+
+.navbar {
+  color: white;
+  background: #043873;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  @include media.tablet() {
+    padding: 16px 32px;
+  }
+  @include media.wide() {
+    padding: 16px 220px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+.brand {
+  gap: 3.472%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(6px, 1vw, 12px);
+  width: auto;
+  height: auto;
+  flex: 0 0 auto;
+  text-decoration: none;
+  overflow: hidden;
+
+  svg {
+    width: auto;
+    height: clamp(18px, 3vw, 32px);
+    display: block;
+    flex: 0 0 auto;
+  }
+  @include media.desktop() {
+    order: 0;
+  }
+
+  &__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 19.6px;
+    white-space: nowrap;
+
+    @include media.tablet() {
+      font-size: 28px;
+    }
+  }
+}
+
+.menu {
+  display: none;
+
+  @include media.desktop() {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-left: auto;
+    margin-right: 75px;
+  }
+
+  &__link {
+    height: 23px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    white-space: nowrap;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: clamp(16px, 1vw, 18px);
+    line-height: 23px;
+
+    .nav-arrow {
+      width: clamp(8px, 0.7vw, 9px);
+      height: clamp(4px, 0.4vw, 4px);
+      flex: 0 0 auto;
+      display: block;
+
+      path {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    }
+  }
+}
+
+.toggle {
+  background: transparent;
+  border: none;
+  margin-left: auto;
+  line-height: 0;
+  width: 42px;
+  height: 24px;
+
+  @include media.laptop() {
+    display: flex;
+    margin-left: 32px;
+    order: 2;
+  }
+
+  @include media.desktop() {
+    display: none;
+  }
+}
+
+.actions {
+  display: none;
+
+  .btn--secondary {
+    min-width: 126px;
+    height: 60px;
+    padding: 16px 40px;
+  }
+
+  .navbar__btn-cta {
+    min-width: 227px;
+    height: 60px;
+    padding: 16px 24px;
+    font-size: 16px;
+  }
+
+  @include media.laptop() {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+    order: 1;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "landing1",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "http-server ./ --port 4200",
+    "compile-css": "sass --watch ./theme/index.scss ./output/index.css"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
+}

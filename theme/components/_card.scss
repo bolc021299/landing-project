@@ -1,0 +1,35 @@
+.card-grid {
+  width: 100%;
+  min-width: 0;
+  gap: 32px;
+}
+
+.card {
+  flex: 0 0 85%;
+  margin: 0 auto;
+  border-radius: 16px;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+  height: auto;
+  scroll-snap-align: center;
+  transition:
+    transform 1.5s ease,
+    box-shadow 1.5s ease;
+}
+
+.card--featured {
+  background: #043873;
+  color: #fff;
+}
+
+.card--light {
+  background: #fff;
+  color: #111;
+}
+
+.card--sky-blue {
+  background: #4f9cf9;
+  color: #fff;
+}

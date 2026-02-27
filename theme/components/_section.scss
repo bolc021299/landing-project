@@ -1,0 +1,24 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 16px;
+  color: #ffffff;
+  background-color: #043873;
+}
+
+.section--white {
+  background-color: #ffffff;
+  color: #020202;
+}
+
+.section > * {
+  min-width: 0;
+}
+
+.section--white.pricing {
+  overflow: visible;
+}
