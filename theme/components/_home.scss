@@ -1,3 +1,5 @@
+@use '../tools/mixins' as media;
+
 .hero__long-waves {
   position: absolute;
   width: 100%;
@@ -16,6 +18,7 @@
   flex-direction: column;
   z-index: 2;
   align-items: center;
+  @tablet;
 }
 .hero__title {
   width: 100%;
@@ -175,7 +178,14 @@
   width: 89.375vw;
   height: 67.069vw;
   margin-bottom: 60px;
+
+  @include media.tablet() {
+    width: 69.531vw;
+    height: 51.816vw;
+    margin-bottom: 60px;
+  }
 }
+
 .customise__detail {
   justify-content: space-between;
   margin-left: auto;

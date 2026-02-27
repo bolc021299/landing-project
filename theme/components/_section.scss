@@ -23,19 +23,6 @@ p {
   margin: 24px auto 60px auto;
 }
 
-@media (max-width: 768px) {
-  .section,
-  .section--white {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
 .section--white.pricing {
   overflow: visible;
 }
