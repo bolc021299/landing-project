@@ -1,7 +1,7 @@
 @use '../settings/breakpoints';
 
 @mixin mobile() {
-  @media (min-width: 0) and (max-width: breakpoints.$breakpoint-md) {
+  @media (min-width: 375px) and (max-width: breakpoints.$breakpoint-md) {
     @content;
   }
 }

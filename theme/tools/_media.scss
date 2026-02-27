@@ -484,28 +484,6 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1152px) {
-  .hero,
-  .ecosystem,
-  .extension,
-  .customise,
-  .pricing,
-  .data,
-  .sponsors,
-  .integrations,
-  .testimonial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  [class$='_header'] {
-    max-width: 728px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 @media (max-width: 1152px) {
   .ecosystem__management {
     position: relative;
