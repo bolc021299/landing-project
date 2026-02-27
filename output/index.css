@@ -570,7 +570,6 @@ figure {
      object-fit: contain;
 }
 
-/*-----------integrations----------*/
 .integrations {
   padding: 100px 16px;
 }
@@ -598,24 +597,9 @@ figure {
   justify-content: center;
 }
 
-/*--------testimonial ---------*/
 .testimonial {
   display: flex;
   justify-content: center;
-}
-.testimonial .testimonial__quotes {
-  margin-top: -10px;
-  margin-bottom: 30px;
-  width: 56px;
-  height: 40px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.testimonial .testimonial .card {
-  border: none;
-  margin: 60px auto;
-  align-items: flex-start;
-  text-align: left;
 }
 .testimonial__header {
   display: block;
@@ -626,10 +610,11 @@ figure {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
 }
 .testimonial__header .testimonial__base__title {
   position: relative;
-  bottom: 52px;
+  bottom: 115px;
   width: 151px;
   height: 49px;
   pointer-events: none;
@@ -638,24 +623,30 @@ figure {
           user-select: none;
   z-index: -1;
   margin-bottom: -72px;
-  left: 86px;
+  left: 19px;
 }
 .testimonial__header .tablet__title {
   display: none;
 }
-.testimonial .testimonial__text {
+.testimonial .card {
+  border: none;
+  margin: 60px auto;
+  align-items: flex-start;
+  text-align: left;
+}
+.testimonial .card .testimonial__text {
   font-size: 16px;
   margin: 32px 0 40px 0;
 }
-.testimonial .testimonial_photo {
-  margin-top: 40px;
-  width: 65px;
-  height: 65px;
+.testimonial .card .testimonial__quotes {
+  margin-top: -10px;
+  margin-bottom: 30px;
+  width: 56px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.testimonial .card__testimonial p {
-  margin: 0;
-}
-.testimonial .testimonial__divider {
+.testimonial .card .testimonial__divider {
   border: 2px;
   height: 1px;
   width: 100%;
@@ -663,12 +654,21 @@ figure {
   background: rgba(0, 0, 0, 0.35);
   margin-top: 40px;
 }
-.testimonial .testimonial__name {
+.testimonial .card .testimonial__author {
+  font-size: 18px;
+}
+.testimonial .card .testimonial__author .testimonial_photo {
+  margin-top: 40px;
+  width: 65px;
+  height: 65px;
+}
+.testimonial .card .testimonial__author .testimonial__name {
   margin-bottom: 15px;
 }
-.testimonial .testimonial__card p,
-.testimonial .testimonial__card span,
-.testimonial .testimonial__card strong {
+.testimonial .card__testimonial p {
+  margin: 0;
+}
+.testimonial__card p, .testimonial__card span, .testimonial__card strong {
   color: inherit;
 }
 .testimonial .card--sky-blue .testimonial__quotes {
@@ -679,7 +679,6 @@ figure {
   border-color: white;
 }
 
-/*-----------------signup----------------*/
 .signup {
   display: flex;
   flex-direction: column;
@@ -687,27 +686,20 @@ figure {
   text-align: left;
   padding-bottom: 32px;
 }
-
-.signup__title {
-  max-width: 97%;
+.signup .signup__title {
   text-align: left;
+  margin-inline: 0;
+  max-width: 288px;
 }
-
 .signup__apps {
   max-width: 30px;
   max-height: 30px;
   display: flex;
   gap: 40px;
 }
-
 .signup__sales {
   margin-left: 0;
-}
-
-/*--------------------final-------------*/
-.final {
-  margin: 0%;
-  padding: 0%;
+  margin-right: auto;
 }
 
 @media (max-width: 1023px) {
