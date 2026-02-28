@@ -8,4 +8,5 @@
 @use 'components/home';
 @use 'components/navbar';
 @use 'components/footer';
-@use 'tools/media';
+@use 'settings/breakpoints';
+@use 'tools/mixins';

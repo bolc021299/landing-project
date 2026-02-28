@@ -1,7 +1,7 @@
 @use '../settings/breakpoints';
 
 @mixin mobile() {
-  @media (min-width: 375px) and (max-width: breakpoints.$breakpoint-md) {
+  @media (max-width: (breakpoints.$breakpoint-md - 1px)) {
     @content;
   }
 }
@@ -26,6 +26,12 @@
 
 @mixin wide() {
   @media (min-width: breakpoints.$breakpoint-xxl) {
+    @content;
+  }
+}
+
+@mixin mobile-tablet() {
+  @media (max-width: (breakpoints.$breakpoint-lg - 1px)) {
     @content;
   }
 }
