@@ -1,6 +1,4 @@
 .card-grid {
-  width: 100%;
-  min-width: 0;
   gap: 40px;
 }
 
@@ -11,12 +9,22 @@
   padding: 28px 22px;
   display: flex;
   flex-direction: column;
-  min-height: auto;
-  height: auto;
   scroll-snap-align: center;
   transition:
     transform 1s ease,
     box-shadow 1s ease;
+
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+  min-width: 0;
+}
+
+.card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 20px 48px rgba(4, 56, 115, 0.22);
+  z-index: 10;
+  position: relative;
 }
 
 .card--featured {

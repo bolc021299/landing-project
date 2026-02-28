@@ -7,19 +7,19 @@
 }
 
 @mixin tablet() {
-  @media (min-width: breakpoints.$breakpoint-md) and (max-width: (breakpoints.$breakpoint-lg - 1px)) {
+  @media (min-width: breakpoints.$breakpoint-md) {
     @content;
   }
 }
 
 @mixin laptop() {
-  @media (min-width: breakpoints.$breakpoint-lg) and (max-width: (breakpoints.$breakpoint-xl - 1px)) {
+  @media (min-width: breakpoints.$breakpoint-lg) {
     @content;
   }
 }
 
 @mixin desktop() {
-  @media (min-width: breakpoints.$breakpoint-xl) and (max-width: (breakpoints.$breakpoint-xxl - 1px)) {
+  @media (min-width: breakpoints.$breakpoint-xl) {
     @content;
   }
 }
