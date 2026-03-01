@@ -1,3 +1,4 @@
+@use '../tools/mixins' as media;
 .section {
   position: relative;
   overflow: hidden;
@@ -8,6 +9,10 @@
   padding: 80px 16px;
   color: #ffffff;
   background-color: #043873;
+
+  @include media.laptop {
+    padding: 140px 32px;
+  }
 }
 
 .section--white {
