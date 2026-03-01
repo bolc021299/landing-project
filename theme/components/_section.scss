@@ -1,4 +1,5 @@
 @use '../tools/mixins' as media;
+
 .section {
   position: relative;
   overflow: hidden;
@@ -12,6 +13,11 @@
 
   @include media.laptop {
     padding: 140px 32px;
+  }
+
+  @include media.wide() {
+    padding-right: 220px;
+    padding-left: 220px;
   }
 }
 
