@@ -766,6 +766,7 @@
 
   .sync__media-waves {
     display: none;
+    position: relative;
 
     @include media.tablet() {
       display: flex;
@@ -781,13 +782,34 @@
     }
 
     @include media.desktop() {
-      display: flex;
+      display: block;
       position: absolute;
-      transform: translateX(-238%);
       z-index: 0;
-      left: 50%;
-      top: -55px;
+      left: -20px;
       overflow: hidden;
+      width: 246px;
+      height: 514px;
+      top: 10px;
+    }
+
+    @include media.wide() {
+      display: none;
+    }
+  }
+
+  .sync__conical-waves {
+    display: none;
+
+    @include media.wide() {
+      display: block;
+      position: absolute;
+      z-index: 0;
+      left: -16px;
+      overflow: hidden;
+      width: 492px;
+      height: 793px;
+      top: -145px;
+      filter: brightness(0.8);
     }
   }
 
@@ -802,7 +824,7 @@
     }
 
     @include media.desktop() {
-      width: min(1095px, 100%);
+      width: min(1200px, 100%);
       margin-inline: auto;
     }
 
@@ -816,7 +838,7 @@
         display: inline-block;
       }
       @include media.desktop() {
-        width: 1095px;
+        width: 1200px;
         display: inline-block;
         text-align: center;
         margin-left: auto;
@@ -1152,16 +1174,17 @@
     margin: 60px auto;
     align-items: flex-start;
     text-align: left;
-    max-height: 480px;
+    max-height: 500px;
     width: 100%;
 
     @include media.laptop() {
-      max-height: 570px;
+      width: 100%;
+      max-height: 500px;
+      max-width: 470px;
     }
 
     @include media.desktop() {
-      max-height: 480px;
-      max-width: 500px;
+      width: 100%;
     }
 
     .testimonial__text {
