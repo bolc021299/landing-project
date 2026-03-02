@@ -1,4 +1,5 @@
 @use '../tools/mixins' as media;
+@use '../settings/colors' as c;
 
 .hero {
   @include media.tablet() {
@@ -657,7 +658,7 @@
     max-width: none;
     margin: 0;
     scroll-snap-align: center;
-    border: 2px solid #ffe492;
+    border: 2px solid c.$secondary;
     text-align: left;
     justify-content: flex-start;
 
@@ -728,8 +729,8 @@
       display: grid;
       place-items: center;
       font-weight: 700;
-      border: 2px solid #f6d45a;
-      color: #f6d45a;
+      border: 2px solid c.$secondary-border;
+      color: c.$secondary-border;
     }
   }
   .dots {
@@ -740,8 +741,8 @@
     }
   }
   .select {
-    background: #4f9cf9;
-    color: #fff;
+    background: c.$primary;
+    color: c.$text-light;
     border: none;
   }
   .btn--third {
@@ -1253,8 +1254,8 @@
   }
 
   .card--sky-blue .testimonial__divider {
-    background: white;
-    border-color: white;
+    background: c.$text-light;
+    border-color: c.$text-light;
   }
 }
 

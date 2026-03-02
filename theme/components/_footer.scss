@@ -1,10 +1,11 @@
 @use '../tools/mixins' as media;
+@use '../settings/colors' as c;
 
 .footer {
   padding: 140px 16px 30px 16px;
   text-align: center;
-  background: #043873;
-  color: white;
+  background: c.$bg-dark;
+  color: c.$text-light;
   max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
@@ -119,7 +120,7 @@
       }
     }
     .col--select {
-      color: #ffe492;
+      color: c.$secondary;
       font-weight: 700;
     }
   }
@@ -193,7 +194,7 @@
           gap: 12px;
           background: transparent;
           border: 0;
-          color: #fff;
+          color: c.$text-light;
           font: inherit;
           cursor: pointer;
 
@@ -213,7 +214,7 @@
           margin: 10px 0 0;
           padding: 8px 0;
           list-style: none;
-          background: #0f3b73;
+          background: c.$primary-dark;
           border: 1px solid rgba(255, 255, 255, 0.2);
           border-radius: 10px;
           min-width: 180px;
@@ -223,7 +224,7 @@
         .lang__option {
           padding: 10px 14px;
           cursor: pointer;
-          color: #fff;
+          color: c.$text-light;
         }
       }
     }

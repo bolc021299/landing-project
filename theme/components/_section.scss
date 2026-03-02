@@ -1,4 +1,5 @@
 @use '../tools/mixins' as media;
+@use '../settings/colors' as c;
 
 .section {
   position: relative;
@@ -8,8 +9,8 @@
   width: 100%;
   margin: 0 auto;
   padding: 80px 16px;
-  color: #ffffff;
-  background-color: #043873;
+  background-color: c.$bg-dark;
+  color: c.$text-light;
 
   @include media.laptop {
     padding: 140px 32px;
@@ -22,8 +23,8 @@
 }
 
 .section--white {
-  background-color: #ffffff;
-  color: #020202;
+  background-color: c.$bg-light;
+  color: c.$text-dark;
 }
 
 .section > * {

@@ -1,3 +1,5 @@
+@use '../settings/colors' as c;
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -15,23 +17,27 @@
 }
 
 .btn--primary {
-  background: #4f9cf9;
-  color: #fff;
+  background: c.$primary;
+  color: c.$text-light;
   max-width: 232px;
   height: 70px;
   padding: 20px 40px;
   font-size: 18px;
 }
 
+.btn--primary:hover {
+  background: c.$primary-dark;
+}
+
 .btn--secondary {
-  background: #ffe492;
-  color: #043873;
+  background: c.$secondary;
+  color: c.$primary-dark;
 }
 
 .btn--third {
-  background-color: #fff;
-  color: #111;
+  background: c.$bg-light;
+  color: c.$text-muted;
   height: 50px;
   padding: 16px 24px;
-  border: 2px solid #f6d45a;
+  border: 2px solid c.$secondary-border;
 }

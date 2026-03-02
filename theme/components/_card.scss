@@ -1,3 +1,5 @@
+@use '../settings/colors' as c;
+
 .card-grid {
   gap: 40px;
 }
@@ -7,13 +9,11 @@
   margin: 0 auto;
   border-radius: 16px;
   padding: 28px 22px;
-  display: flex;
   flex-direction: column;
   scroll-snap-align: center;
   transition:
     transform 1s ease,
     box-shadow 1s ease;
-
   cursor: pointer;
   z-index: 10;
   position: relative;
@@ -23,21 +23,20 @@
 .card:hover {
   transform: scale(1.06);
   box-shadow: 0 20px 48px rgba(4, 56, 115, 0.22);
-  z-index: 10;
   position: relative;
 }
 
 .card--featured {
-  background: #043873;
-  color: #fff;
+  background: c.$primary-dark;
+  color: c.$text-light;
 }
 
 .card--light {
-  background: #fff;
-  color: #111;
+  background: c.$bg-light;
+  color: c.$text-muted;
 }
 
 .card--sky-blue {
-  background: #4f9cf9;
-  color: #fff;
+  background: c.$primary;
+  color: c.$text-light;
 }

@@ -131,11 +131,15 @@ figure {
 
 .btn--primary {
   background: #4f9cf9;
-  color: #fff;
+  color: #ffffff;
   max-width: 232px;
   height: 70px;
   padding: 20px 40px;
   font-size: 18px;
+}
+
+.btn--primary:hover {
+  background: #043873;
 }
 
 .btn--secondary {
@@ -144,8 +148,8 @@ figure {
 }
 
 .btn--third {
-  background-color: #fff;
-  color: #111;
+  background: #ffffff;
+  color: #111111;
   height: 50px;
   padding: 16px 24px;
   border: 2px solid #f6d45a;
@@ -159,8 +163,8 @@ figure {
   width: 100%;
   margin: 0 auto;
   padding: 80px 16px;
-  color: #ffffff;
   background-color: #043873;
+  color: #ffffff;
 }
 @media (min-width: 1024px) {
   .section {
@@ -196,7 +200,6 @@ figure {
   margin: 0 auto;
   border-radius: 16px;
   padding: 28px 22px;
-  display: flex;
   flex-direction: column;
   scroll-snap-align: center;
   transition: transform 1s ease, box-shadow 1s ease;
@@ -209,23 +212,22 @@ figure {
 .card:hover {
   transform: scale(1.06);
   box-shadow: 0 20px 48px rgba(4, 56, 115, 0.22);
-  z-index: 10;
   position: relative;
 }
 
 .card--featured {
   background: #043873;
-  color: #fff;
+  color: #ffffff;
 }
 
 .card--light {
-  background: #fff;
-  color: #111;
+  background: #ffffff;
+  color: #111111;
 }
 
 .card--sky-blue {
   background: #4f9cf9;
-  color: #fff;
+  color: #ffffff;
 }
 
 .dots {
@@ -1022,7 +1024,7 @@ figure {
 }
 .pricing .select {
   background: #4f9cf9;
-  color: #fff;
+  color: #ffffff;
   border: none;
 }
 .pricing .btn--third {
@@ -1569,8 +1571,8 @@ figure {
   filter: brightness(0) invert(1);
 }
 .testimonial .card--sky-blue .testimonial__divider {
-  background: white;
-  border-color: white;
+  background: #ffffff;
+  border-color: #ffffff;
 }
 
 .signup {
@@ -1724,7 +1726,7 @@ figure {
   }
 }
 .navbar {
-  color: white;
+  color: #ffffff;
   background: #043873;
   padding: 16px;
   display: flex;
@@ -1739,7 +1741,7 @@ figure {
 }
 @media (min-width: 1920px) {
   .navbar {
-    padding: 16px 220px;
+    padding: 32px 220px;
     max-width: 1920px;
     margin: 0 auto;
   }
@@ -1869,7 +1871,7 @@ figure {
   padding: 140px 16px 30px 16px;
   text-align: center;
   background: #043873;
-  color: white;
+  color: #ffffff;
   max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
@@ -2067,7 +2069,7 @@ figure {
   gap: 12px;
   background: transparent;
   border: 0;
-  color: #fff;
+  color: #ffffff;
   font: inherit;
   cursor: pointer;
 }
@@ -2086,7 +2088,7 @@ figure {
   margin: 10px 0 0;
   padding: 8px 0;
   list-style: none;
-  background: #0f3b73;
+  background: #043873;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   min-width: 180px;
@@ -2095,7 +2097,7 @@ figure {
 .footer__bottom .footer__legal .lang .lang__option {
   padding: 10px 14px;
   cursor: pointer;
-  color: #fff;
+  color: #ffffff;
 }
 @media (min-width: 1024px) {
   .footer__include {

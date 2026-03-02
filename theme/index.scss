@@ -1,6 +1,14 @@
+@use 'settings/colors';
+@use 'settings/breakpoints';
+
+@use 'tools/mixins';
+
 @use 'generics/reset';
+
 @use 'elements/body';
+
 @use 'objects/grid';
+
 @use 'components/button';
 @use 'components/section';
 @use 'components/card';
@@ -8,6 +16,3 @@
 @use 'components/home';
 @use 'components/navbar';
 @use 'components/footer';
-@use 'settings/breakpoints';
-@use 'tools/mixins';
-@use 'settings/colors';

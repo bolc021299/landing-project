@@ -1,4 +1,6 @@
+@use '../settings/colors' as c;
+
 figure {
   margin: 0;
-  background-color: #c4defd;
+  background-color: c.$bg-light-alt;
 }
