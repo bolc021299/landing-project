@@ -202,7 +202,7 @@
     &__header {
       position: relative;
       @include media.laptop() {
-        width: 422px;
+        width: 500px;
       }
       .management__base__title {
         position: absolute;
@@ -228,9 +228,9 @@
           left: 331px;
           z-index: -1;
           pointer-events: none;
-          width: 175px;
+          width: 360px;
           height: 40px;
-          top: 109px;
+          top: 105px;
         }
       }
     }
@@ -278,7 +278,7 @@
         grid-column: 2;
         justify-self: end;
         width: fit-content;
-        max-width: 470px;
+        max-width: 500px;
         text-align: left;
 
         display: flex;
@@ -288,7 +288,7 @@
 
       @include media.desktop() {
         max-width: 650px;
-        width: none;
+        width: auto;
       }
     }
 
@@ -298,7 +298,6 @@
 
       @include media.laptop() {
         width: none;
-        max-width: 0px;
       }
 
       @include media.desktop() {
@@ -328,9 +327,9 @@
         @include media.laptop() {
           top: 6px;
           left: 50%;
-          width: 369px;
+          width: 368px;
           height: 59px;
-          transform: translateX(190px);
+          transform: translateX(-47px);
         }
       }
     }
