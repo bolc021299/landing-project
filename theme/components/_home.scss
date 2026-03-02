@@ -756,119 +756,120 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+
   @include media.desktop() {
     align-items: center;
     text-align: center;
     position: relative;
     overflow: hidden;
   }
-}
 
-.syng__media-waves {
-  display: flex;
-
-  @include media.tablet() {
-    display: flex;
-    position: absolute;
-    z-index: -1;
-    left: -1px;
-    top: 10px;
-  }
-  @include media.laptop() {
+  .sync__media-waves {
     display: none;
-  }
-  @include media.desktop() {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-767px);
-    top: -110px;
-    z-index: 1;
-  }
-  @include media.wide() {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-767px);
-    top: -110px;
-    z-index: 1;
-  }
-}
 
-&__head {
-  display: block;
-  position: relative;
+    @include media.tablet() {
+      display: flex;
+      position: absolute;
+      z-index: -1;
+      left: -1px;
+      top: -24px;
+      height: -webkit-fill-available;
+    }
 
-  @include media.laptop() {
-    width: 650px;
+    @include media.laptop() {
+      display: none;
+    }
+
+    @include media.desktop() {
+      display: flex;
+      position: absolute;
+      transform: translateX(-238%);
+      z-index: 0;
+      left: 50%;
+      top: -55px;
+      overflow: hidden;
+    }
   }
 
-  @include media.desktop() {
-    width: min(1095px, 100%);
-    margin-inline: auto;
-  }
-
-  .sync__title {
-    width: 615px;
-    text-align: left;
-    margin-inline: 0;
+  &__head {
+    display: block;
+    position: relative;
+    margin-inline: block;
+    position: relative;
 
     @include media.laptop() {
       width: 650px;
-      display: inline-block;
     }
+
     @include media.desktop() {
-      width: 1095px;
-      display: inline-block;
-      text-align: center;
-      margin-left: auto;
+      width: min(1095px, 100%);
+      margin-inline: auto;
+    }
+
+    .sync__title {
+      text-align: left;
+      margin-inline: 0;
+      margin: 0;
+
+      @include media.laptop() {
+        width: 650px;
+        display: inline-block;
+      }
+      @include media.desktop() {
+        width: 1095px;
+        display: inline-block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .sync__base__title-azul {
+      position: absolute;
+      width: 400px;
+      height: 25px;
+      left: 0%;
+      z-index: -1;
+      top: 115px;
+      transform: translateX(-4px);
+      pointer-events: none;
+      margin-inline: 0;
+
+      @include media.tablet() {
+        position: absolute;
+        width: 241px;
+        height: 40px;
+        top: 97px;
+      }
+      @include media.laptop() {
+        left: 50%;
+        transform: translateX(15%);
+        top: 121px;
+        width: 303px;
+      }
+      @include media.desktop() {
+        left: 50%;
+        transform: translateX(240px);
+        top: 62px;
+        width: 355px;
+        height: 30px;
+      }
+    }
+  }
+  &__text {
+    @include media.laptop() {
+      display: flex;
+      width: 650px;
+      align-self: start;
+      margin-left: 0;
       margin-right: auto;
     }
-  }
-  .sync__base__title-azul {
-    position: absolute;
-    width: 400px;
-    height: 25px;
-    z-index: -1;
-    top: 115px;
-    pointer-events: none;
-    margin-inline: 0;
 
-    @include media.tablet() {
-      position: absolute;
-      width: 241px;
-      height: 40px;
-      top: 97px;
-    }
-    @include media.laptop() {
-      left: 50%;
-      transform: translateX(15%);
-      top: 121px;
-      width: 303px;
-    }
     @include media.desktop() {
-      left: 50%;
-      transform: translateX(240px);
-      top: 62px;
-      width: 355px;
-      height: 30px;
+      margin-inline: auto;
+      width: 1064px;
+      align-self: center;
+      margin-inline: auto;
     }
-  }
-}
-&__text {
-  @include media.laptop() {
-    display: flex;
-    width: 650px;
-    align-self: start;
-    margin-left: 0;
-    margin-right: auto;
-  }
-
-  @include media.desktop() {
-    margin-inline: auto;
-    width: 1064px;
-    align-self: center;
-    margin-inline: auto;
   }
 }
 
@@ -1240,6 +1241,7 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  max-width: 1920px;
 
   @include media.tablet() {
     padding-top: 140px;
@@ -1250,7 +1252,6 @@
     text-align: center;
     align-items: center;
     margin-inline: auto;
-    max-width: 100%;
     padding: auto;
     padding: auto;
   }

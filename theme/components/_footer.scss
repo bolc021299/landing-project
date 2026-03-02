@@ -5,6 +5,9 @@
   text-align: center;
   background: #043873;
   color: white;
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
 
   @include media.tablet() {
     padding: 140px 20px 30px 20px;
