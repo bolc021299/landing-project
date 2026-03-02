@@ -16,8 +16,8 @@
   }
 
   @include media.wide() {
-    padding-right: 220px;
-    padding-left: 220px;
+    padding-right: 220px !important;
+    padding-left: 220px !important;
   }
 }
 

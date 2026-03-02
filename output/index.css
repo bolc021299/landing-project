@@ -158,7 +158,8 @@ figure {
 }
 @media (min-width: 1920px) {
   .section {
-    padding: 16px 220px;
+    padding-right: 220px !important;
+    padding-left: 220px !important;
   }
 }
 
@@ -1019,21 +1020,15 @@ figure {
 }
 
 .sync {
-  margin-left: 0;
-  margin-right: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  padding-bottom: 140px;
-}
-@media (min-width: 768px) {
-  .sync {
-    padding: 140px 20px;
-  }
+  position: relative;
 }
 @media (min-width: 1440px) {
   .sync {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     position: relative;
@@ -1042,6 +1037,7 @@ figure {
 }
 .sync__media-waves {
   display: none;
+  position: absolute;
 }
 @media (min-width: 768px) {
   .sync__media-waves {
@@ -1060,11 +1056,13 @@ figure {
 @media (min-width: 1440px) {
   .sync__media-waves {
     position: absolute;
-    display: flex;
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    top: -37px;
+    left: 50%;
+    pointer-events: none;
+    width: 175px;
+    height: 40px;
+    top: 109px;
+    z-index: 1;
+    transform: translateX(50px);
   }
 }
 .sync__head {
@@ -1147,8 +1145,10 @@ figure {
 }
 @media (min-width: 1440px) {
   .sync__text {
-    margin-left: auto;
+    margin-inline: auto;
     width: 1064px;
+    align-self: center;
+    margin-inline: auto;
   }
 }
 
@@ -1847,6 +1847,10 @@ figure {
     text-align: left;
   }
 }
+.footer__include {
+  max-width: 1480px;
+  margin-inline: auto;
+}
 @media (min-width: 1024px) {
   .footer__container {
     display: grid;
@@ -1854,6 +1858,8 @@ figure {
     width: 100%;
     align-items: start;
     gap: 20px;
+    max-width: 1480px;
+    margin-inline: auto;
   }
 }
 @media (min-width: 1024px) {
