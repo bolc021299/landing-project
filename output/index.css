@@ -5,6 +5,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: clip;
+}
+@supports not (overflow-x: clip) {
+  * html,
+  * body,
+  *::before html,
+  *::before body,
+  *::after html,
+  *::after body {
+    overflow-x: hidden;
+  }
 }
 
 html,
@@ -1025,7 +1036,6 @@ figure {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  position: relative;
 }
 @media (min-width: 1440px) {
   .sync {
@@ -1035,38 +1045,39 @@ figure {
     overflow: hidden;
   }
 }
-.sync__media-waves {
+.sync .sync__media-waves {
   display: none;
-  position: absolute;
 }
 @media (min-width: 768px) {
-  .sync__media-waves {
+  .sync .sync__media-waves {
     display: flex;
     position: absolute;
     z-index: -1;
     left: -1px;
-    top: 10px;
+    top: -24px;
+    height: -webkit-fill-available;
   }
 }
 @media (min-width: 1024px) {
-  .sync__media-waves {
+  .sync .sync__media-waves {
     display: none;
   }
 }
 @media (min-width: 1440px) {
-  .sync__media-waves {
+  .sync .sync__media-waves {
+    display: flex;
     position: absolute;
+    transform: translateX(-238%);
+    z-index: 0;
     left: 50%;
-    pointer-events: none;
-    width: 175px;
-    height: 40px;
-    top: 109px;
-    z-index: 1;
-    transform: translateX(50px);
+    top: -55px;
+    overflow: hidden;
   }
 }
 .sync__head {
   display: block;
+  position: relative;
+  margin-inline: block;
   position: relative;
 }
 @media (min-width: 1024px) {
@@ -1081,9 +1092,9 @@ figure {
   }
 }
 .sync__head .sync__title {
-  width: 615px;
   text-align: left;
   margin-inline: 0;
+  margin: 0;
 }
 @media (min-width: 1024px) {
   .sync__head .sync__title {
@@ -1104,8 +1115,10 @@ figure {
   position: absolute;
   width: 400px;
   height: 25px;
+  left: 0%;
   z-index: -1;
   top: 115px;
+  transform: translateX(-4px);
   pointer-events: none;
   margin-inline: 0;
 }
@@ -1542,6 +1555,7 @@ figure {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  max-width: 1920px;
 }
 @media (min-width: 768px) {
   .signup {
@@ -1554,7 +1568,6 @@ figure {
     text-align: center;
     align-items: center;
     margin-inline: auto;
-    max-width: 100%;
     padding: auto;
     padding: auto;
   }
@@ -1834,6 +1847,9 @@ figure {
   text-align: center;
   background: #043873;
   color: white;
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media (min-width: 768px) {
   .footer {
