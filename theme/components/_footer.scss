@@ -15,6 +15,11 @@
     padding: 140px 32 30px 32px;
     text-align: left;
   }
+
+  &__include {
+    max-width: 1480px;
+    margin-inline: auto;
+  }
   &__container {
     @include media.laptop() {
       display: grid;
@@ -22,6 +27,8 @@
       width: 100%;
       align-items: start;
       gap: 20px;
+      max-width: 1480px;
+      margin-inline: auto;
     }
   }
 
