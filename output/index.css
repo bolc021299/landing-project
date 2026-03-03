@@ -1870,11 +1870,6 @@ figure {
 .footer {
   padding: 140px 16px 30px 16px;
   text-align: center;
-  background: #043873;
-  color: #ffffff;
-  max-width: 1920px;
-  margin-right: auto;
-  margin-left: auto;
 }
 @media (min-width: 768px) {
   .footer {

@@ -4,11 +4,6 @@
 .footer {
   padding: 140px 16px 30px 16px;
   text-align: center;
-  background: c.$bg-dark;
-  color: c.$text-light;
-  max-width: 1920px;
-  margin-right: auto;
-  margin-left: auto;
 
   @include media.tablet() {
     padding: 140px 20px 30px 20px;
